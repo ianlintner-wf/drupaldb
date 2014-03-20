@@ -18,14 +18,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe "database::mysql"
+
 
 # Store this in a variable so we don't keep repeating it
 mysql_connection_info = {
     :host => "localhost",
     :username => 'root',
-    # automatically get this from the override_attributes call!
-    :password => ''
+    :password => 'vagrant'
 }
 
 # my_database = database name
